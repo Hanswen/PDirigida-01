@@ -1,0 +1,46 @@
+public class Persona {
+    private String Nombre;
+    private String Apellidopaterno;
+    private String correo;
+
+    public Persona() {
+        this.Nombre = "";
+        this.Apellidopaterno = "";
+        this.correo = "";
+    }
+
+    public void setNombre(String valorNombre) {
+       this.Nombre = valorNombre;
+    }
+
+    public void setApellidopaterno(String valorApellidopaterno) {
+        this.Apellidopaterno = valorApellidopaterno;
+    }
+
+    public void setCorreo(String valorCorreo) {
+        this.correo = valorCorreo;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public String getApellidopaterno() {
+        return Apellidopaterno;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+    public static void main(String[] args){
+
+        Persona per1 = new Persona();
+        per1.Nombre = "Rosa";
+        System.out.println(per1.Nombre);
+        per1.Apellidopaterno = "Gonzales";
+        System.out.println(per1.Apellidopaterno);
+        per1.correo = "rgonzales@gmail.com";
+        System.out.println(per1.correo);
+
+    }
+}
